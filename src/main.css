@@ -1,0 +1,107 @@
+
+@font-face {
+  font-family: 'Sparta';
+  src: url('./assets/fonts/Spartan-Bold.ttf');
+  font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Sparta';
+}
+
+
+body {
+
+  --main-background:hsl(222, 26%, 31%);
+  --toogle-bg:hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+
+  /* keys */
+  --key-bg:hsl(225, 21%, 49%);
+  --key-bg-two:hsl(6, 63%, 50%);
+  --key-bg-three:hsl(30, 25%, 89%);
+  
+  --key-shadow-color:hsl(224, 28%, 35%);
+  --key-shadow-color-two:hsl(6, 70%, 34%);
+  --key-shadow-color-three:hsl(28, 16%, 65%);
+  --ball-toogle:hsl(6, 63%, 50%);
+
+  /* text */
+  --text-color:#fff;
+  --text-color-two: hsl(221, 76%, 13%);
+  --white:#fff;
+
+  --button-text-color:hsl(221, 76%, 13%);
+
+}
+
+body.light {
+
+  --main-background:hsl(0, 0%, 90%);
+  --toogle-bg:hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+
+  /* keys */
+  --key-bg:hsl(185, 42%, 37%);
+  --key-bg-two: hsl(25, 98%, 40%);
+  --key-bg-three:hsl(30, 25%, 89%);
+  
+  --key-shadow-color:hsl(185, 58%, 25%);
+  --key-shadow-color-two:hsl(45, 7%, 89%);
+  --key-shadow-color-three:hsl(35, 11%, 61%);
+  --ball-toogle: hsl(25, 98%, 40%);
+
+  /* text */
+  --text-color: hsl(60, 10%, 19%);
+  --text-color-two:hsl(0, 0, 100%);
+  --white:#fff;
+  
+  --button-text-color:hsl(60, 10%, 19%);
+
+}
+
+body.violet {
+
+  /* backgounds */
+
+  --main-background:hsl(268, 75%, 9%);
+  --toogle-bg:hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+
+  /* keys */
+  --key-bg:hsl(281, 89%, 26%);
+  --key-bg-two: hsl(176, 100%, 44%);
+  --key-bg-three:hsl(268, 47%, 21%);
+  
+  --key-shadow-color:hsl(285, 91%, 52%);
+  --key-shadow-color-two:hsl(177, 92%, 70%);
+  --key-shadow-color-three:hsl(290, 70%, 36%);
+  --ball-toogle: hsl(176, 100%, 44%);
+
+  /* text */
+  --text-color:hsl(52, 100%, 62%);
+  --text-color-two:hsl(198, 20%, 13%);
+
+  --button-text-color:hsl(52, 100%, 62%);
+  
+
+}
+
+.App {
+  min-height:100vh;
+  min-width:100vw;
+  background-color:var(--main-background);
+  transition: all .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculatorCont {
+  width: 80%;
+  max-width : 300px;
+}

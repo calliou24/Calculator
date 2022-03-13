@@ -1,0 +1,74 @@
+
+.title {
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+.mainCont {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.swicherCont {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:120px;
+}
+
+.swicherContCont {
+  display: grid;
+  place-items: center; 
+  
+}
+
+.swicher {
+  border-radius: 30px;
+  width: 55px;
+  height:20px;
+  background-color: var(--toogle-bg);
+  margin: 7px 0;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.swicher .ball {
+  height: 17px;
+  width: 17px;
+  background-color:var(--ball-toogle);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.text, .numbers {
+  font-size: .7em;
+  color: var(--text-color);
+}
+
+
+.numbersCont {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#theme1 { 
+  transform:  translateX(-1px);
+}
+
+
+#theme2 { 
+  transform:  translateX(15px);
+}
+
+
+#theme3 { 
+  transform:  translateX(36px);
+}
